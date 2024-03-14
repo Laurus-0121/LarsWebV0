@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Laurus_home" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <script src="../js/home.js"></script>
+</head>
+<body>
+    <nav class="left_nav">
+        <ol class="navMeumItem">
+            <li class="left_nav style_nav_item aboutme">
+                <span>关于我</span>
+                <!--<p>About Me</p>-->
+            </li>
+            <li class="left_nav style_nav_item qiyu">
+                <span>祁煜</span>
+               <!--  <p>Qi Yu</p> -->
+            </li>
+            <li class="left_nav style_nav_item shenxinghui">
+                <span>沈星回</span>
+                <!-- <p>Shen Xinghui</p> -->
+            </li>
+            <li class="left_nav style_nav_item lars">
+                <span>黄子弘凡</span>
+                <!-- <p>Lars Huang</p> -->
+            </li>
+            <li class="left_nav style_nav_item qisili">
+                <span>齐司礼</span>
+                <!-- <p>Qi Sili</p> -->
+            </li>
+        </ol>
+    </nav>
+    <
+    <div>
+
+        <form action="/user/login" method="POST">
+            <h2>Login Form</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="submitForm()">Login</button>
+        </form>
+
+        <form action="/user/register" method="POST">
+            <h2>Register Form</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="register_name" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="register_password" name="password" required>
+
+            <button type="button" onclick="register()">Login</button>
+        </form>
+
+        
+    </div>
+</body>
+</html>

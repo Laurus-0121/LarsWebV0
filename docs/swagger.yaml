@@ -1,0 +1,64 @@
+definitions:
+  model.User:
+    properties:
+      id:
+        type: integer
+      image:
+        type: string
+      is_station:
+        type: string
+      pass_word:
+        type: string
+      user_name:
+        type: string
+    type: object
+info:
+  contact:
+    email: 2312593392@qq.com
+    name: Laurus
+  description: 小黄成长日记
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  title: LarsWebv0
+  version: "1.0"
+paths:
+  /ping:
+    get:
+      consumes:
+      - application/x-json-stream
+      responses: {}
+      summary: ping
+      tags:
+      - ping
+  /user/login:
+    post:
+      consumes:
+      - application/x-json-stream
+      parameters:
+      - description: user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/model.User'
+      responses: {}
+      summary: 用户登录
+      tags:
+      - 用户
+  /user/register:
+    post:
+      consumes:
+      - application/x-json-stream
+      parameters:
+      - description: user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/model.User'
+      responses: {}
+      summary: 用户注册
+      tags:
+      - 用户
+swagger: "2.0"

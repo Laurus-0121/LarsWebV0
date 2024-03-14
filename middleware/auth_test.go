@@ -1,0 +1,7 @@
+package middleware
+
+import "testing"
+
+func TestParseToken(t *testing.T) {
+	parseToken("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMzI0OTQ4OTk1NSIsImV4cCI6MTY3MDA3MzczOCwianRpIjoiMTMiLCJpYXQiOjE2Njk5ODczMzgsImlzcyI6IldlUGxhbnQiLCJuYmYiOjE2Njk5ODczMzgsInN1YiI6ImxvZ2luIn0.JH51rxyh6cer1SJtYb66sOxh3YEMJV8neVbXvYo_i2s")
+}
