@@ -8,9 +8,9 @@ import (
 
 func TestRegisterUser(T *testing.T) {
 	SetupDB()
-	err := RegisterUser(model.User{UserName: "Lars", PassWord: "0421"})
-	err1 := RegisterUser(model.User{UserName: "Laurus", PassWord: "0121"})
-	err2 := RegisterUser(model.User{UserName: "kiwi", PassWord: "0121"})
+	err := Register(model.User{UserName: "Lars", PassWord: "0421"})
+	err1 := Register(model.User{UserName: "Laurus", PassWord: "0121"})
+	err2 := Register(model.User{UserName: "kiwi", PassWord: "0121"})
 	if err != nil {
 		fmt.Sprintf("err")
 	}

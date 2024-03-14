@@ -5,7 +5,7 @@ import (
 	"errors"
 )
 
-func RegisterUser(user model.User) error {
+func Register(user model.User) error {
 	e := FindByUsername(user.UserName)
 	if e != nil {
 		return errors.New("name already exists")
@@ -30,6 +30,21 @@ func FindByUsername(username string) error {
 	_ = db.Where(model.User{UserName: username}).First(&user)
 	if user.ID != 0 {
 		return errors.New("invalid username")
+	}
+	return nil
+}
+func QueryUserById(id uint) (model.User, error) {
+	var user model.User
+	err := db.First(&user, id).Error
+	if err != nil {
+		return user, err
+	}
+	return user, nil
+}
+func UpdateUserInfo(user model.User) error {
+	err := db.Model(&user).Updates(user).Error
+	if err != nil {
+		return err
 	}
 	return nil
 }

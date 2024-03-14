@@ -1,18 +1,36 @@
 package dao
 
 import (
+	"LarsWebV0/config"
 	"LarsWebV0/model"
+	"context"
 	"errors"
-	"time"
+	logger "github.com/sirupsen/logrus"
 )
 
 // 增
 func AddArticle(user model.User, article model.Article) error {
-	article.UserId = user.ID
+	/*article.UserId = user.ID
 	article.CreateTime = time.Now()
 	err := db.Create(&article).Error
 	if err != nil {
 		return errors.New("add failed")
+	}
+	return nil*/
+
+	//_, err := EsClient.Index().Index(config.EsIndex).BodyJson(article).Do(context.TODO())
+	//if err != nil {
+	//	logger.Errorf("insert artice fails: %v", err)
+	//	return err
+	//}
+	return nil
+}
+
+func InsertArticle(article model.Article) error {
+	_, err := EsClient.Index().Index(config.EsIndex).BodyJson(article).Do(context.TODO())
+	if err != nil {
+		logger.Errorf("insert artice fails: %v", err)
+		return err
 	}
 	return nil
 }
@@ -20,7 +38,7 @@ func AddArticle(user model.User, article model.Article) error {
 // 删
 func DeleteArticle(user model.User, articleId string) error {
 	var article model.Article
-	article.UserId = user.ID
+	article.User.ID = user.ID
 	article.ID = articleId
 	err := db.Delete(&article).Error
 	if err != nil {
