@@ -6,7 +6,7 @@ import (
 )
 
 func Register(user model.User) error {
-	e := FindByUsername(user.UserName)
+	e := QueryByUsername(user.UserName)
 	if e != nil {
 		return errors.New("name already exists")
 	}
@@ -25,14 +25,6 @@ func UserLogin(userName, userPassword string) (model.User, error) {
 	return user, nil
 }
 
-func FindByUsername(username string) error {
-	var user model.User
-	_ = db.Where(model.User{UserName: username}).First(&user)
-	if user.ID != 0 {
-		return errors.New("invalid username")
-	}
-	return nil
-}
 func QueryUserById(id uint) (model.User, error) {
 	var user model.User
 	err := db.First(&user, id).Error
@@ -41,8 +33,26 @@ func QueryUserById(id uint) (model.User, error) {
 	}
 	return user, nil
 }
+
+func QueryByUsername(username string) error {
+	var user model.User
+	_ = db.Where(model.User{UserName: username}).First(&user)
+	if user.ID != 0 {
+		return errors.New("invalid username")
+	}
+	return nil
+}
+
 func UpdateUserInfo(user model.User) error {
 	err := db.Model(&user).Updates(user).Error
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func UpdateUserImage(image string, id uint) error {
+	err := db.Model(model.User{ID: id}).Updates(model.User{Image: image}).Error
 	if err != nil {
 		return err
 	}

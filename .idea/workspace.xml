@@ -6,23 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="ae789dd6-f01f-41ea-9554-6958548e5e61" name="Changes" comment="day240314完善es引擎">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d98a76c-a99c-41ea-b108-e0cce459d46a.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d98a76c-a99c-41ea-b108-e0cce459d46a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d98a76c-a99c-41ea-b108-e0cce459d46a/storage_v2/_src_/schema/larswebv0.GNywQg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d98a76c-a99c-41ea-b108-e0cce459d46a/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d98a76c-a99c-41ea-b108-e0cce459d46a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d98a76c-a99c-41ea-b108-e0cce459d46a/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a51e95b-7fe0-431b-a087-32df56dedd10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6a51e95b-7fe0-431b-a087-32df56dedd10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a51e95b-7fe0-431b-a087-32df56dedd10/storage_v2/_src_/schema/larswebv0.GNywQg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6a51e95b-7fe0-431b-a087-32df56dedd10/storage_v2/_src_/schema/larswebv0.GNywQg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e42238d7-9fce-4e5c-999c-39946a50b6c9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e42238d7-9fce-4e5c-999c-39946a50b6c9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cal/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/doConfig.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/dbConfig.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/articleDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/articleDao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/mongo.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/mongo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/userDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/userDao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/userDao_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/userDao_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Article.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/Article.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/articleService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/articleService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/userService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/userService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/page/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +32,29 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Go File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;YueYueNO1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d3511e81-4933-456d-8043-c41676fcf892" />
+        <option name="url" value="git@github.com:YueYueNO1/LarsWebV0" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files/Go/src/errors/errors.go" root0="SKIP_INSPECTION" />
@@ -69,6 +84,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
@@ -80,6 +96,7 @@
     &quot;last_opened_file_path&quot;: &quot;E:/GoProject/LarsWebV0/service&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -120,6 +137,18 @@
       <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="TestMongoDBSetup in LarsWebV0/dao" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="LarsWebV0" />
+      <working_directory value="$PROJECT_DIR$/dao" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="LarsWebV0/dao" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestMongoDBSetup\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestParseToken in LarsWebV0/middleware" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LarsWebV0" />
       <working_directory value="$PROJECT_DIR$/middleware" />
@@ -144,25 +173,13 @@
       <pattern value="^\QTestUserLogin\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestUserLogin in LarsWebV0/dao" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="LarsWebV0" />
-      <working_directory value="$PROJECT_DIR$/dao" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="LarsWebV0/dao" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestUserLogin\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build LarsWebV0" />
+        <item itemvalue="Go Test.TestMongoDBSetup in LarsWebV0/dao" />
         <item itemvalue="Go Test.TestParseToken in LarsWebV0/middleware" />
         <item itemvalue="Go Test.TestUserLogin in LarsWebV0/dao (1)" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Test.TestUserLogin in LarsWebV0/dao" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +203,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -223,7 +240,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/dao/articleDao.go</url>
-          <line>43</line>
+          <line>58</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
@@ -233,7 +250,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/dao/articleDao.go</url>
-          <line>50</line>
+          <line>89</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
@@ -243,7 +260,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/dao/articleDao.go</url>
-          <line>63</line>
+          <line>143</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
@@ -262,34 +279,24 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/dao/articleDao.go</url>
-          <line>39</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/service/userService.go</url>
-          <line>33</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/service/userService.go</url>
-          <line>57</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/service/articleService.go</url>
-          <line>29</line>
+          <line>33</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/service/articleService.go</url>
-          <line>19</line>
+          <line>21</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/router/router.go</url>
-          <line>36</line>
-          <option name="timeStamp" value="62" />
+          <url>file://$PROJECT_DIR$/service/userService.go</url>
+          <line>37</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/templates/js/userInfo.js</url>
+          <line>18</line>
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

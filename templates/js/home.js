@@ -1,10 +1,10 @@
 function submitForm() {
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    var username = document.getElementById('user_name').value;
+    var password = document.getElementById('pass_word').value;
 
     var user = {
-        username: username,
-        password: password
+        user_name: username,
+        pass_word: password
     };
 
     var jsonUser = JSON.stringify(user);
@@ -28,10 +28,16 @@ function submitForm() {
         })
         .then(data => {
             console.log(data); // 服务器返回的数据
+            // 登录成功后重定向到 user.html 页面
+            localStorage.setItem('Authorization', data.data); // 将 JWT 存储在 localStorage 中
+            localStorage.setItem('user',user)
+            window.location.href = 'userInfo';
+
         })
         .catch(error => {
             console.error('There has been a problem with your fetch operation:', error);
         });
+
 }
 
 function register() {

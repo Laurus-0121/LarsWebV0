@@ -18,7 +18,7 @@ import (
 
 func init() {
 	dao.SetupDB()
-	//dao.MongoDBSetup()
+	dao.MongoDBSetup()
 	dao.EsSetup()
 }
 

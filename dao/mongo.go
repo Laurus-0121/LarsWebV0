@@ -8,8 +8,8 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-const username = "haizhi"
-const password = "haizhi666"
+const username = "laurus"
+const password = "123456"
 const ip = "127.0.0.1"
 const port = "27017"
 const dbname = "LarsWebv0"

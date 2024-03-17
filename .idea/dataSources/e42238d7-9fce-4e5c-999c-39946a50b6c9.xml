@@ -6,9 +6,39 @@
     </root>
     <schema id="2" parent="1" name="LarsWebv0">
       <Current>1</Current>
+      <LocalIntrospectionTimestamp>2024-03-14.15:54:28</LocalIntrospectionTimestamp>
     </schema>
     <schema id="3" parent="1" name="admin"/>
     <schema id="4" parent="1" name="config"/>
     <schema id="5" parent="1" name="local"/>
+    <table id="6" parent="2" name="Article"/>
+    <column id="7" parent="6" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="8" parent="6" name="_id._id">
+      <DasType>String|12s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="9" parent="6" name="bookmark">
+      <DasType>Int64|12s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="10" parent="6" name="comment">
+      <DasType>Int64|12s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="11" parent="6" name="id">
+      <DasType>Int64|12s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="12" parent="6" name="userid">
+      <DasType>Int64|12s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="13" parent="6" name="zan">
+      <DasType>Int64|12s</DasType>
+      <Position>8</Position>
+    </column>
   </database-model>
 </dataSource>
